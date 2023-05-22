@@ -1,8 +1,9 @@
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 public class SideBarTest extends BaseTest{
 
-    @Test
+    @Test @Category(Smoke.class)
     public void linksAreDisplayed(){
         loginPage.successLogin("Admin", "admin123");
         dashboardPage.dashboardPageIsOpen();

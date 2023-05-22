@@ -1,10 +1,12 @@
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Description;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static com.codeborne.selenide.Selenide.*;
 
 public class LoginTest extends BaseTest{
+    @Category(Smoke.class)
     @Test @Description("Success login with valid data")
     public void successLogin(){
         loginPage.enterUsername("Admin");
