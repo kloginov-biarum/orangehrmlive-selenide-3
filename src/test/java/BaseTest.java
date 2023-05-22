@@ -12,7 +12,7 @@ public class BaseTest {
 
     @Before
     public void setUp(){
-        Configuration.browser = "firefox";
+
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         open(BASE_URL);
     }
@@ -27,6 +27,5 @@ public class BaseTest {
     ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
 
     LinkedInPage linkedInPage = new LinkedInPage();
-
     SideBar sideBar = new SideBar();
 }

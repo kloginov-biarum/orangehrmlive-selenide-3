@@ -1,6 +1,8 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Step;
+import org.openqa.selenium.WebDriver;
 
 import java.time.Duration;
 
@@ -14,7 +16,8 @@ public class DashboardPage {
 
     @Step("Dashboard page is open")
     public void dashboardPageIsOpen(){
-        sideBarPanel.shouldBe(visible, Duration.ofSeconds(10));
+
+        sideBarPanel.shouldBe(visible, Duration.ofSeconds(30));
     }
 
 }
